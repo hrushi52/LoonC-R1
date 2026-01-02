@@ -58,8 +58,8 @@ export function BookingForm({ propertyName, pricePerPerson, onClose }: BookingFo
   };
 
   return (
-    <div className="space-y-4 py-0">
-      <div className="grid gap-4 max-h-[50vh] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+    <div className="space-y-4 py-0 pb-20 md:pb-0">
+      <div className="grid gap-4 max-h-[60vh] md:max-h-[50vh] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
         <div className="grid gap-2">
           <Label htmlFor="name">Full Name</Label>
           <Input 
@@ -105,6 +105,7 @@ export function BookingForm({ propertyName, pricePerPerson, onClose }: BookingFo
                     setIsCheckInOpen(false);
                   }}
                   initialFocus
+                  className="p-3 pointer-events-auto"
                 />
               </PopoverContent>
             </Popover>
@@ -133,6 +134,7 @@ export function BookingForm({ propertyName, pricePerPerson, onClose }: BookingFo
                     setIsCheckOutOpen(false);
                   }}
                   initialFocus
+                  className="p-3 pointer-events-auto"
                 />
               </PopoverContent>
             </Popover>
